@@ -6,7 +6,7 @@ export default function CountTimer() {
 
     const [time, setTime] = useState(0);
 
-    const decrementTimer = (e) => {
+    function decrementTimer(e){
         if (e.key === 'Enter') {
             const inputTime = Math.floor(e.target.value);
             if (isNaN(inputTime)) {
